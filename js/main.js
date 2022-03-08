@@ -89,7 +89,7 @@ pdfjsLib
     const div = document.createElement('div');
     div.className = 'error';
     div.appendChild(document.createTextNode(err.message));
-    document.querySelector('body').parentNode(div, canvas);
+    document.querySelector('body').insertBefore(div, canvas);
     // Remove top bar
     document.querySelector('.top-bar').style.display = 'none';
   });
