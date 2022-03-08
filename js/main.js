@@ -3,6 +3,9 @@
 const urlQuery = window.location.search;
 const url = new URLSearchParams(urlQuery);
 const pdfViewer = url.get('PDFViewer');
+const pdfLink = url.get('url');
+
+console.log(pdfLink);
 console.log(pdfViewer);
 
 let pdfDoc = null,
